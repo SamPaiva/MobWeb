@@ -1,0 +1,6 @@
+C:\Projetos_VS\MobWeb\MobWeb.Modelo\bin\Debug\MobWeb.Modelo.dll
+C:\Projetos_VS\MobWeb\MobWeb.Modelo\bin\Debug\MobWeb.Modelo.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Modelo\obj\Debug\MobWeb.Modelo.csprojAssemblyReference.cache
+C:\Projetos_VS\MobWeb\MobWeb.Modelo\obj\Debug\MobWeb.Modelo.csproj.CoreCompileInputs.cache
+C:\Projetos_VS\MobWeb\MobWeb.Modelo\obj\Debug\MobWeb.Modelo.dll
+C:\Projetos_VS\MobWeb\MobWeb.Modelo\obj\Debug\MobWeb.Modelo.pdb

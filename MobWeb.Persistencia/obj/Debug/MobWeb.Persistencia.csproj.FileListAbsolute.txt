@@ -1,0 +1,14 @@
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\MobWeb.Persistencia.dll.config
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\MobWeb.Persistencia.dll
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\MobWeb.Persistencia.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\EntityFramework.dll
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\MobWeb.Modelo.dll
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\MobWeb.Modelo.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\EntityFramework.xml
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csprojAssemblyReference.cache
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csproj.CoreCompileInputs.cache
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csproj.CopyComplete
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.dll
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.pdb

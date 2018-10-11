@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobWeb.Modelo", "MobWeb.Modelo\MobWeb.Modelo.csproj", "{599C1014-5161-4253-B77B-A80FE4AD10BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobWeb.Persistencia", "MobWeb.Persistencia\MobWeb.Persistencia.csproj", "{F971BFC0-7FB3-44F6-AA1B-CEEF986644B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{599C1014-5161-4253-B77B-A80FE4AD10BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599C1014-5161-4253-B77B-A80FE4AD10BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599C1014-5161-4253-B77B-A80FE4AD10BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599C1014-5161-4253-B77B-A80FE4AD10BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F971BFC0-7FB3-44F6-AA1B-CEEF986644B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F971BFC0-7FB3-44F6-AA1B-CEEF986644B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F971BFC0-7FB3-44F6-AA1B-CEEF986644B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F971BFC0-7FB3-44F6-AA1B-CEEF986644B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9CCFA4D-AD02-440E-9373-42D5790FB7F1}
+	EndGlobalSection
+EndGlobal
