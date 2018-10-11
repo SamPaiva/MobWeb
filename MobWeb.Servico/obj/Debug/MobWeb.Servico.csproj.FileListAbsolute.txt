@@ -1,0 +1,14 @@
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Servico.dll
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Servico.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Modelo.dll
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Persistencia.dll
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\EntityFramework.dll
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Modelo.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Persistencia.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\MobWeb.Persistencia.dll.config
+C:\Projetos_VS\MobWeb\MobWeb.Servico\bin\Debug\EntityFramework.xml
+C:\Projetos_VS\MobWeb\MobWeb.Servico\obj\Debug\MobWeb.Servico.csprojAssemblyReference.cache
+C:\Projetos_VS\MobWeb\MobWeb.Servico\obj\Debug\MobWeb.Servico.csproj.CoreCompileInputs.cache
+C:\Projetos_VS\MobWeb\MobWeb.Servico\obj\Debug\MobWeb.Servico.csproj.CopyComplete
+C:\Projetos_VS\MobWeb\MobWeb.Servico\obj\Debug\MobWeb.Servico.dll
+C:\Projetos_VS\MobWeb\MobWeb.Servico\obj\Debug\MobWeb.Servico.pdb
