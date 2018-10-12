@@ -1,4 +1,5 @@
 ﻿using MobWeb.Modelo;
+using MobWeb.Persistencia.Mapping;
 using MobWeb.Persistencia.Migrations;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -10,6 +11,10 @@ namespace MobWeb.Persistencia.Context
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            
+            modelBuilder.Configurations.Add(new ClienteMap());
+            modelBuilder.Configurations.Add(new UsuarioMap());
+
             base.OnModelCreating(modelBuilder);
         }
 
