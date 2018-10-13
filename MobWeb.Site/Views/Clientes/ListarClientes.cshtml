@@ -1,0 +1,74 @@
+﻿@model  IEnumerable<MobWeb.Modelo.Cliente>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Lista de Clientes";
+}
+
+
+<table id="tbl" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.RazaoSocial)</th>
+            <th>@Html.DisplayNameFor(model => model.NomeFantasia)</th>
+            <th>@Html.DisplayNameFor(model => model.Endereco)</th>
+            <th>@Html.DisplayNameFor(model => model.Logradouro)</th>
+            <th>@Html.DisplayNameFor(model => model.Municipio)</th>
+            <th>@Html.DisplayNameFor(model => model.Numero)</th>
+            <th>@Html.DisplayNameFor(model => model.Cnpj)</th>
+            <th>@Html.DisplayNameFor(model => model.Bairro)</th>
+            <th>@Html.DisplayNameFor(model => model.Cep)</th>
+            <th>@Html.DisplayNameFor(model => model.Complemento)</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.RazaoSocial)</td>
+                <td>@Html.DisplayFor(modelItem => item.NomeFantasia)</td>
+                <td>@Html.DisplayFor(modelItem => item.Endereco)</td>
+                <td>@Html.DisplayFor(modelItem => item.Logradouro)</td>
+                <td>@Html.DisplayFor(modelItem => item.Municipio)</td>
+                <td>@Html.DisplayFor(modelItem => item.Numero)</td>
+                <td>@Html.DisplayFor(modelItem => item.Cnpj)</td>
+                <td>@Html.DisplayFor(modelItem => item.Bairro)</td>
+                <td>@Html.DisplayFor(modelItem => item.Cep)</td>
+                <td>@Html.DisplayFor(modelItem => item.Complemento)</td>
+                <td>@Html.ActionLink("Editar", "EditarCliente", null, new { id = item.ClienteId }, new { @class = "btn btn-danger" })</td>
+                <td>@Html.ActionLink("Excluir", "DeletarCliente", null, new { id = item.ClienteId }, new { @class = "btn btn-warning" })</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+@section Styles{
+    <link href="@Url.Content("~/Content/DataTables/css/dataTables.bootstrap.min.css")" rel="stylesheet" />
+    <link href="~/PrimeUI/primeui.css" rel="stylesheet" />
+}
+
+
+@section Scripts{
+    <script src="@Url.Content("~/Scripts/DataTables/jquery.dataTables.js")"></script>
+    <script src="@Url.Content("~/Scripts/DataTables/dataTables.bootstrap.js")"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#tbl').dataTable();
+
+            $('li').removeClass("active");
+            $('#liClientes').addClass("active");
+
+            $("#default").p
+        });
+    </script>
+}

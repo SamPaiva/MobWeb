@@ -21,17 +21,17 @@ namespace MobWeb.Persistencia.DAL
 
         public void GravarCliente(Cliente cliente)
         {
-            if (cliente.ClienteId == null)
-            {
-                db.Clientes.Add(cliente);
-            }
-            else
-            {
-                db.Entry(cliente).State = EntityState.Modified;
-            }
-
+            
+            db.Clientes.Add(cliente);
             db.SaveChanges();
         }
+
+        public void EditarCliente(Cliente cliente)
+        {
+            db.Entry(cliente).State = EntityState.Modified;
+            db.SaveChanges();
+
+        }        
 
         public Cliente EliminarClientePorId(long id)
         {

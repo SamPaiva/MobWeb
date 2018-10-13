@@ -23,6 +23,11 @@ namespace MobWeb.Servico.Services
             clienteDAL.GravarCliente(cliente);
         }
 
+        public void EditarCliente(Cliente cliente)
+        {
+           clienteDAL.EditarCliente(cliente);
+        } 
+
         public Cliente EliminarClientePorId(long id)
         {
             return clienteDAL.EliminarClientePorId(id);

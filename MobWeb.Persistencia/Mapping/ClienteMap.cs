@@ -8,7 +8,7 @@ namespace MobWeb.Persistencia.Mapping
     {
         public ClienteMap()
         {
-            ToTable("Usuario");
+            ToTable("Cliente");
 
             Property(x => x.ClienteId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 

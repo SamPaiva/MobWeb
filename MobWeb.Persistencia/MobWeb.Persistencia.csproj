@@ -52,6 +52,10 @@
     <Compile Include="DAL\UsuarioDAL.cs" />
     <Compile Include="Mapping\ClienteMap.cs" />
     <Compile Include="Mapping\UsuarioMap.cs" />
+    <Compile Include="Migrations\201810121357110_Initial_Create.cs" />
+    <Compile Include="Migrations\201810121357110_Initial_Create.Designer.cs">
+      <DependentUpon>201810121357110_Initial_Create.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +68,11 @@
       <Project>{599C1014-5161-4253-B77B-A80FE4AD10BD}</Project>
       <Name>MobWeb.Modelo</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810121357110_Initial_Create.resx">
+      <DependentUpon>201810121357110_Initial_Create.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

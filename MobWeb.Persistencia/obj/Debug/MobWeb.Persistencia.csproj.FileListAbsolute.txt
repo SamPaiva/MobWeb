@@ -12,3 +12,5 @@ C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csproj.C
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csproj.CopyComplete
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.dll
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.pdb
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Initial_Create.resources
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csproj.GenerateResource.cache

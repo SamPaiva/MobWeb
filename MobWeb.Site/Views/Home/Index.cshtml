@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">MobWeb</h1>
+        <h2 class="text-center">CRUD - .NET MVC 5 </h2>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("li").addClass('active');
+            $("#liClientes").removeClass('active');
+        });
+    </script>
+}

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @RenderSection("Styles", false)
+</head>
+
+
+<body>
+    <div class="row">
+        <div class="col-xs-9 col-md-12">
+            <nav class="navbar navbar-inverse">
+                <ul class="nav navbar-nav">
+                    <li id="liHome" role="presentation" class="nav-item active">@Html.ActionLink("Home", "Index", "Home")</li>
+                    &nbsp;
+                    <li id="liClientes" role="presentation" class="nav-item active">@Html.ActionLink("Clientes", "ListarClientes", "Clientes")</li>
+                    &nbsp;
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="col-xs-9 col-md-9">
+        <br />
+        @RenderBody()
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-10 ">
+            <hr />
+            <footer>
+                <small>&copy; - 2018</small>
+            </footer>
+        </div>
+    </div>
+
+    <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.js")"></script>
+   
+    @RenderSection("Scripts", false)
+</body>
+</html>
