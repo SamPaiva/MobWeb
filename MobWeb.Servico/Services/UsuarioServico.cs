@@ -23,6 +23,11 @@ namespace MobWeb.Servico.Services
             usuarioDAL.GravarUsuario(usuario);
         }
 
+        public void EditarUsuario(Usuario usuario)
+        {
+            usuarioDAL.EditarUsuario(usuario);
+        }
+
         public Usuario EliminarUsuarioPorId(long id)
         {
             return usuarioDAL.EliminarUsuarioPorId(id);

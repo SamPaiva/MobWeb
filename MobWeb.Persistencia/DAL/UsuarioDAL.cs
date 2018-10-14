@@ -21,15 +21,13 @@ namespace MobWeb.Persistencia.DAL
 
         public void GravarUsuario(Usuario usuario)
         {
-            if (usuario.UsuarioId == null)
-            {
-                db.Usuarios.Add(usuario);
-            }
-            else
-            {
-                db.Entry(usuario).State = EntityState.Modified;
-            }
+            db.Usuarios.Add(usuario);
+            db.SaveChanges();
+        }
 
+        public void EditarUsuario(Usuario usuario)
+        {
+            db.Entry(usuario).State = EntityState.Modified;
             db.SaveChanges();
         }
 

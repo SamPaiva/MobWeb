@@ -157,6 +157,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -673,6 +674,7 @@
     <Content Include="Views\Clientes\EditarCliente.cshtml" />
     <Content Include="Views\Clientes\DeletarCliente.cshtml" />
     <Content Include="Views\Shared\_BasicLayout.cshtml" />
+    <Content Include="Views\Usuarios\ListarUsuario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
