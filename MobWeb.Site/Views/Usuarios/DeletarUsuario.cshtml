@@ -1,0 +1,34 @@
+﻿@model MobWeb.Modelo.Usuario
+
+@{
+    Layout = "~/Views/Shared/_BasicLayout.cshtml";
+    ViewBag.Title = "Deletar Usuário";
+}
+
+
+<h3>Você tem certeza que que deletar esse Usuário?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.HiddenFor(model => model.UsuarioId)
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-danger" /> |
+            @Html.ActionLink("Voltar a lista de Usuários", "ListarUsuario", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

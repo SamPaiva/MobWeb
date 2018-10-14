@@ -51,10 +51,23 @@
     <Compile Include="DAL\ClienteDAL.cs" />
     <Compile Include="DAL\UsuarioDAL.cs" />
     <Compile Include="Mapping\ClienteMap.cs" />
+    <Compile Include="Mapping\UsuarioLoginMap.cs" />
     <Compile Include="Mapping\UsuarioMap.cs" />
     <Compile Include="Migrations\201810121357110_Initial_Create.cs" />
     <Compile Include="Migrations\201810121357110_Initial_Create.Designer.cs">
       <DependentUpon>201810121357110_Initial_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810141251217_Add_UsuarioLogin.cs" />
+    <Compile Include="Migrations\201810141251217_Add_UsuarioLogin.Designer.cs">
+      <DependentUpon>201810141251217_Add_UsuarioLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810141454236_Att.cs" />
+    <Compile Include="Migrations\201810141454236_Att.Designer.cs">
+      <DependentUpon>201810141454236_Att.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810141552354_Atualizacao.cs" />
+    <Compile Include="Migrations\201810141552354_Atualizacao.Designer.cs">
+      <DependentUpon>201810141552354_Atualizacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,6 +85,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810121357110_Initial_Create.resx">
       <DependentUpon>201810121357110_Initial_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810141251217_Add_UsuarioLogin.resx">
+      <DependentUpon>201810141251217_Add_UsuarioLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810141454236_Att.resx">
+      <DependentUpon>201810141454236_Att.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810141552354_Atualizacao.resx">
+      <DependentUpon>201810141552354_Atualizacao.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

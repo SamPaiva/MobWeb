@@ -14,6 +14,7 @@ namespace MobWeb.Persistencia.Context
             
             modelBuilder.Configurations.Add(new ClienteMap());
             modelBuilder.Configurations.Add(new UsuarioMap());
+            modelBuilder.Configurations.Add(new UsuarioLoginMap());
 
             base.OnModelCreating(modelBuilder);
         }
@@ -25,5 +26,6 @@ namespace MobWeb.Persistencia.Context
 
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<UsuarioLogin> UsuarioLogin { get; set; }
     }
 }

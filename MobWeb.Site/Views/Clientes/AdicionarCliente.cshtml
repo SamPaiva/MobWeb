@@ -17,7 +17,7 @@
         <div class="panel-body">
             <div class="form-horizontal">
                 @Html.HiddenFor(model => model.ClienteId)
-                @Html.ValidationSummary(true, null, new { @claas = "text-danger" })
+                @Html.ValidationSummary(true, null, new { @class = "text-danger" })
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.RazaoSocial, htmlAttributes: new { @class = "control-label col-md-2" })

@@ -12,7 +12,7 @@ namespace MobWeb.Persistencia.Mapping
 
             Property(x => x.ClienteId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
-            Property(c => c.NomeFantasia).HasMaxLength(200);
+            Property(c => c.NomeFantasia).HasMaxLength(200).IsRequired();
 
             Property(c => c.Numero).IsRequired();
 

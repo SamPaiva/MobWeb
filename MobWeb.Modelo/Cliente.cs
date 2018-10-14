@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace MobWeb.Modelo
 {
@@ -13,22 +14,27 @@ namespace MobWeb.Modelo
         public string NomeFantasia { get; set; }
 
         [DisplayName("CNPJ")]
+        
         public int Cnpj { get; set; }
 
         [DisplayName("End.")]
+        
         public string Endereco { get; set; }
 
         [DisplayName("Logra.")]
         public string Logradouro { get; set; }
 
         [DisplayName("Núm.")]
+        
         public int Numero { get; set; }
+        
         public string  Bairro { get; set; }
 
         [DisplayName("Compl.")]
         public string Complemento { get; set; }
 
         [DisplayName("Município")]
+        
         public string Municipio { get; set; }
 
         [DisplayName("CEP")]

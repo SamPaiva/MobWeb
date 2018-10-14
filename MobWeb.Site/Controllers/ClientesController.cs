@@ -10,6 +10,7 @@ namespace MobWeb.Site.Controllers
         private ClienteServico clienteServico = new ClienteServico();
         
         // GET: Clientes
+
         public ActionResult ListarClientes()
         {
             return View(clienteServico.ObterClientePorNome());
@@ -77,7 +78,7 @@ namespace MobWeb.Site.Controllers
                 return HttpNotFound();
             }
 
-            return View(cliente);
+                return View(cliente);
         }
 
         [HttpPost]
