@@ -6,22 +6,26 @@ namespace MobWeb.Modelo
     {
         public long ClienteId { get; set; }
 
-        [DisplayName("Razão Social")]
+        [DisplayName("R. Social")]
         public string RazaoSocial { get; set; }
 
-        [DisplayName("Nome Fantasia")]
+        [DisplayName("N. Fantasia")]
         public string NomeFantasia { get; set; }
 
         [DisplayName("CNPJ")]
         public int Cnpj { get; set; }
 
-        [DisplayName("Endereço")]
+        [DisplayName("End.")]
         public string Endereco { get; set; }
+
+        [DisplayName("Logra.")]
         public string Logradouro { get; set; }
 
-        [DisplayName("Número")]
+        [DisplayName("Núm.")]
         public int Numero { get; set; }
         public string  Bairro { get; set; }
+
+        [DisplayName("Compl.")]
         public string Complemento { get; set; }
 
         [DisplayName("Município")]

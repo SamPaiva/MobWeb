@@ -1,7 +1,7 @@
 ﻿@model MobWeb.Modelo.Cliente
 
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_BasicLayout.cshtml";
     ViewBag.Title = "Deletar Cliente";
 }
 
@@ -15,7 +15,7 @@
             @Html.HiddenFor(model => model.ClienteId)
             @Html.DisplayNameFor(model => model.RazaoSocial)
         </dt>
-
+        
         <dd>
             @Html.DisplayFor(model => model.RazaoSocial)
         </dd>
@@ -27,7 +27,7 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Deletar" class="btn btn-lg btn-danger" /> |
+            <input type="submit" value="Deletar" class="btn btn-danger" /> |
             @Html.ActionLink("Voltar a lista de Clientes", "ListarClientes", null, new { @class = "btn btn-primary" })
         </div>
     }
