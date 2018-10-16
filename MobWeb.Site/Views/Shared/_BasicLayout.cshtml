@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using MobWeb.Modelo
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -55,6 +57,15 @@
                     <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Lista de Clientes", "ListarClientes", "Clientes")</li>
                     <li>@Html.ActionLink("Lista de Usuarios", "ListarUsuario", "Usuarios")</li>
+                    @{ 
+                        var user = Session["usuarioLogadoID"] as UsuarioLogin;
+                    }
+                    <br />
+                    @if (user != null)
+                    {
+                       <li>@Html.ActionLink("Sair", "Logout", "Home")</li>
+                    }
+
                 </ul>
             
             </section>

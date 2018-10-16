@@ -12,19 +12,19 @@ namespace MobWeb.Site.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            if (Session["usuarioLogadoID"] != null)
+            if (Session["usuarioLogadoID"] == null)
             {
-                return View();
+                return RedirectToAction("Login", "Login");
             }
             else
             {
-                return RedirectToAction("Login");
+                return View();
             }
         }
 
         public ActionResult Login()
         {
-            return View();   
+            return View();
         }
 
         [HttpPost]
@@ -38,13 +38,20 @@ namespace MobWeb.Site.Controllers
 
                 if (v != null)
                 {
-                    Session["usuarioLogadoID"] = v.Id.ToString();
+                    Session["usuarioLogadoID"] = new UsuarioLogin();
                     Session["nomeUsuarioLogado"] = v.Usuario.ToString();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Index", "Home");
                 }
             }
 
             return View(user);
         }
+
+        public ActionResult Logout()
+        {
+            Session.Clear();
+            return RedirectToAction("Login");
+        }
+
     }
 }

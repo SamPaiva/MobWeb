@@ -1,7 +1,16 @@
-﻿
+﻿@using MobWeb.Modelo
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_BasicLayout.cshtml";
+}
+
+@{ 
+    var usuario = Session["UsuarioLogin"] as UsuarioLogin;
+}
+
+@if (usuario != null)
+{
+    @Html.ActionLink("Sair", "Logout", "Home");
 }
 
 <div class="container">
