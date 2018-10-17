@@ -12,13 +12,13 @@ namespace MobWeb.Persistencia.Mapping
 
             Property(c => c.UsuarioId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
+            Property(c => c.Email).HasMaxLength(150);
+
+            Property(c => c.Nome).HasMaxLength(150);
+
+            Property(c => c.Telefone).HasMaxLength(50);
+
             Property(c => c.Apelido).HasMaxLength(150);
-
-            Property(c => c.Email).HasMaxLength(150).IsRequired();
-
-            Property(c => c.Nome).HasMaxLength(150).IsRequired();
-
-            Property(c => c.Telefone).HasMaxLength(20).IsRequired();
 
         }
     }

@@ -81,6 +81,18 @@
     <Compile Include="Migrations\201810171931147_Att_Usuario.Designer.cs">
       <DependentUpon>201810171931147_Att_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810172027593_AttMap.cs" />
+    <Compile Include="Migrations\201810172027593_AttMap.Designer.cs">
+      <DependentUpon>201810172027593_AttMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810172035384_Alteracoes.cs" />
+    <Compile Include="Migrations\201810172035384_Alteracoes.Designer.cs">
+      <DependentUpon>201810172035384_Alteracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810172111105_UsuarioAtt.cs" />
+    <Compile Include="Migrations\201810172111105_UsuarioAtt.Designer.cs">
+      <DependentUpon>201810172111105_UsuarioAtt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,6 +127,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810171931147_Att_Usuario.resx">
       <DependentUpon>201810171931147_Att_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810172027593_AttMap.resx">
+      <DependentUpon>201810172027593_AttMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810172035384_Alteracoes.resx">
+      <DependentUpon>201810172035384_Alteracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810172111105_UsuarioAtt.resx">
+      <DependentUpon>201810172111105_UsuarioAtt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

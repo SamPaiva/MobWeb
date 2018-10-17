@@ -20,3 +20,6 @@ C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migratio
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Changes.resources
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Atualizacao_Cliente.resources
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Att_Usuario.resources
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.AttMap.resources
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Alteracoes.resources
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.UsuarioAtt.resources
