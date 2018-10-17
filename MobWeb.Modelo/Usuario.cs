@@ -10,7 +10,7 @@ namespace MobWeb.Modelo
 
         [DisplayName("E-mail")]
         public string Email { get; set; }
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
 
     }
 }

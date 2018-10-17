@@ -18,7 +18,7 @@ namespace MobWeb.Persistencia.Mapping
 
             Property(c => c.Nome).HasMaxLength(150).IsRequired();
 
-            Property(c => c.Telefone).IsRequired();
+            Property(c => c.Telefone).HasMaxLength(20).IsRequired();
 
         }
     }

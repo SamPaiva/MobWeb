@@ -77,6 +77,10 @@
     <Compile Include="Migrations\201810162353454_Atualizacao_Cliente.Designer.cs">
       <DependentUpon>201810162353454_Atualizacao_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810171931147_Att_Usuario.cs" />
+    <Compile Include="Migrations\201810171931147_Att_Usuario.Designer.cs">
+      <DependentUpon>201810171931147_Att_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -108,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810162353454_Atualizacao_Cliente.resx">
       <DependentUpon>201810162353454_Atualizacao_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810171931147_Att_Usuario.resx">
+      <DependentUpon>201810171931147_Att_Usuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
