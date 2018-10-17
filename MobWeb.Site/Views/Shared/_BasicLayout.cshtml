@@ -11,7 +11,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link href="~/Content/Site.css" rel="stylesheet"/>
     <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
@@ -20,82 +20,80 @@
 
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
-        
+
         <header class="main-header">
-        
+
             <a class="logo">
-        
+
                 <span class="logo-mini"><b>A</b>LT</span>
-        
+
                 <span class="logo-lg"><b>Mob</b>Web</span>
             </a>
-            
+
             <nav class="navbar navbar-static-top" role="navigation">
-            
-              
-            
+
+
+
                 <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-             
-                    </ul>
+                    <ul class="nav navbar-nav"></ul>
                 </div>
             </nav>
         </header>
-   
+
         <aside class="main-sidebar">
-   
+
             <section class="sidebar">
-            
+
                 <div class="user-panel">
-                   
+
                     <div class="pull-left info">
-                   
+
                     </div>
                 </div>
-            
+
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Lista de Clientes", "ListarClientes", "Clientes")</li>
                     <li>@Html.ActionLink("Lista de Usuarios", "ListarUsuario", "Usuarios")</li>
-                    @{ 
+                    @{
                         var user = Session["usuarioLogadoID"] as UsuarioLogin;
                     }
                     <br />
                     @if (user != null)
                     {
-                       <li>@Html.ActionLink("Sair", "Logout", "Home")</li>
+                        <li>@Html.ActionLink("Sair", "Logout", "Home")</li>
                     }
 
                 </ul>
-            
+
             </section>
-            
+
         </aside>
-        
+
         <div class="content-wrapper">
-        
+
             <section class="content-header">
                 @RenderBody()
             </section>
-        
-            <section class="content container-fluid">
-        
-            </section>
-        
+
+            <section class="content container-fluid"></section>
+
         </div>
-        
+
         <footer class="main-footer">
-          
-            <strong>Copyright &copy; 2018 - by Samuel Paiva</strong> 
+
+            <strong>Copyright &copy; 2018 - by Samuel Paiva</strong>
         </footer>
-        
+
         <div class="control-sidebar-bg"></div>
     </div>
-    
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
 
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/inputmask")
+    
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/admin-lte/plugins/input-mask")
     @Scripts.Render("~/admin-lte/js")
-    @RenderSection("Scripts", false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

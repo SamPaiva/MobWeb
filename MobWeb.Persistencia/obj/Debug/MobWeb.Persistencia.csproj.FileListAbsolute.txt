@@ -17,3 +17,5 @@ C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.csproj.G
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Add_UsuarioLogin.resources
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Att.resources
 C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Atualizacao.resources
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Changes.resources
+C:\Projetos_VS\MobWeb\MobWeb.Persistencia\obj\Debug\MobWeb.Persistencia.Migrations.Atualizacao_Cliente.resources

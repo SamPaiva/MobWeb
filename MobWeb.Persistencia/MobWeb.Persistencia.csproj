@@ -69,6 +69,14 @@
     <Compile Include="Migrations\201810141552354_Atualizacao.Designer.cs">
       <DependentUpon>201810141552354_Atualizacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810162348463_Changes.cs" />
+    <Compile Include="Migrations\201810162348463_Changes.Designer.cs">
+      <DependentUpon>201810162348463_Changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810162353454_Atualizacao_Cliente.cs" />
+    <Compile Include="Migrations\201810162353454_Atualizacao_Cliente.Designer.cs">
+      <DependentUpon>201810162353454_Atualizacao_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +102,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810141552354_Atualizacao.resx">
       <DependentUpon>201810141552354_Atualizacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810162348463_Changes.resx">
+      <DependentUpon>201810162348463_Changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810162353454_Atualizacao_Cliente.resx">
+      <DependentUpon>201810162353454_Atualizacao_Cliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

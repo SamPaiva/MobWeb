@@ -35,6 +35,13 @@ namespace MobWeb.Site
               "~/admin-lte/plugins/fastclick/fastclick.js",
               "~/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"
               ));
+
+            bundles.Add(new ScriptBundle("~/bundles/inputmask").Include("~/admin-lte/plugins/input-mask/jquery.inputmask.js",
+                "~/admin-lte/plugins/input-mask/jquery.inputmask.extensions.js",
+                "~/admin-lte/plugins/input-mask/jquery.inputmask.date.extensions.js",
+                "~/admin-lte/plugins/input-mask/jquery.inputmask.numeric.extensions.js",
+                "~/admin-lte/plugins/input-mask/jquery.inputmask.phone.extensions.js",
+                "~/admin-lte/plugins/input-mask/jquery.inputmask.regex.extensions.js"));
         }
     }
 }

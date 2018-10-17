@@ -15,7 +15,7 @@ namespace MobWeb.Modelo
 
         [DisplayName("CNPJ")]
         
-        public int Cnpj { get; set; }
+        public string Cnpj { get; set; }
 
         [DisplayName("End.")]
         
@@ -38,7 +38,7 @@ namespace MobWeb.Modelo
         public string Municipio { get; set; }
 
         [DisplayName("CEP")]
-        public int Cep { get; set; }
+        public string Cep { get; set; }
 
     }
 }

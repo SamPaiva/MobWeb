@@ -24,9 +24,9 @@ namespace MobWeb.Persistencia.Mapping
 
             Property(c => c.Bairro).HasMaxLength(200).IsRequired();
 
-            Property(c => c.Cep);
+            Property(c => c.Cep).HasMaxLength(20).IsRequired();
 
-            Property(c => c.Cnpj).IsRequired();
+            Property(c => c.Cnpj).HasMaxLength(50).IsRequired();
 
             Property(c => c.Complemento).HasMaxLength(150);
 
