@@ -30,9 +30,16 @@ namespace MobWeb.Site.Controllers
         [ValidateAntiForgeryToken]
         [HttpPost]
 
-        public ActionResult AdicionarCliente(Cliente cliente)
+        public ActionResult AdicionarCliente(Cliente cliente, string cnpj)
         {
-            
+            var result = db.Clientes.Where(c => c.Cnpj.Contains(cnpj)).FirstOrDefault();
+            if (result != null)
+            {
+                TempData["mensagem"] = "Por favor insira um CNPJ não cadastrado";
+                return RedirectToAction("AdicionarCliente");
+                
+            }
+
             clienteServico.GravarCliente(cliente);
             return RedirectToAction("ListarClientes");
         }
@@ -60,8 +67,17 @@ namespace MobWeb.Site.Controllers
 
         [HttpPost]
 
-        public ActionResult EditarCliente(Cliente cliente)
+        public ActionResult EditarCliente(Cliente cliente, string cnpj)
         {
+            var result = db.Clientes.Where(c => c.Cnpj.Contains(cnpj)).FirstOrDefault();
+
+            if (result != null)
+            {
+                TempData["mensagem"] = "Por favor insira um CNPJ não cadastrado";
+                return RedirectToAction("EditarCliente");
+
+            }
+
             clienteServico.EditarCliente(cliente);
             return RedirectToAction("ListarClientes");
         }
@@ -100,7 +116,7 @@ namespace MobWeb.Site.Controllers
         {
 
             System.Threading.Thread.Sleep(200);
-            var result = db.Clientes.Where(c => c.Cnpj == cnpj).SingleOrDefault();
+            var result = db.Clientes.Where(c => c.Cnpj.Contains(cnpj)).FirstOrDefault();
             if(result != null)
             {
                 return Json(1);
@@ -108,8 +124,8 @@ namespace MobWeb.Site.Controllers
             else
             {
                 return Json(0);
+                
             }
-            
         }
     }
 }
