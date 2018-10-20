@@ -2039,6 +2039,7 @@
     <Content Include="Views\Usuarios\DeletarUsuario.cshtml" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Clientes\VerificaCnpj.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

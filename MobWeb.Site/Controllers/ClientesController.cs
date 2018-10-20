@@ -1,5 +1,9 @@
-﻿using MobWeb.Modelo;
+﻿using Microsoft.Ajax.Utilities;
+using MobWeb.Modelo;
+using MobWeb.Persistencia.Context;
 using MobWeb.Servico.Services;
+using System;
+using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 
@@ -8,6 +12,7 @@ namespace MobWeb.Site.Controllers
     public class ClientesController : Controller
     {
         private ClienteServico clienteServico = new ClienteServico();
+        private EFContext db = new EFContext();
         
         // GET: Clientes
 
@@ -27,6 +32,7 @@ namespace MobWeb.Site.Controllers
 
         public ActionResult AdicionarCliente(Cliente cliente)
         {
+            
             clienteServico.GravarCliente(cliente);
             return RedirectToAction("ListarClientes");
         }
@@ -89,5 +95,21 @@ namespace MobWeb.Site.Controllers
         }
 
         #endregion
+        
+        public JsonResult CheckCnpj(string cnpj)
+        {
+
+            System.Threading.Thread.Sleep(200);
+            var result = db.Clientes.Where(c => c.Cnpj == cnpj).SingleOrDefault();
+            if(result != null)
+            {
+                return Json(1);
+            }
+            else
+            {
+                return Json(0);
+            }
+            
+        }
     }
 }

@@ -32,5 +32,6 @@ namespace MobWeb.Servico.Services
         {
             return clienteDAL.EliminarClientePorId(id);
         }
+
     }
 }
